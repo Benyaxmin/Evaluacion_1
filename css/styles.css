@@ -1,0 +1,363 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    letter-spacing: 0.06rem;
+}
+
+html {
+    height: 100%;
+    
+  }
+body{
+    display: grid;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    
+}
+
+
+/* Establece el degradado como fondo fijo */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: linear-gradient(to bottom, #FFE331 0%, #ffaa33 25%, #ff884d 50%, #ff6633 75%, #ff3333 100%);
+}
+
+a {
+    color: inherit; /* Hereda el color del texto de su contenedor */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+}
+
+a:hover {
+    text-decoration: underline; /* Opcional: agrega un subrayado al pasar el ratón */
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mensaje{
+    text-align: center;
+}
+
+span{
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    
+}
+
+.contenedor-logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
+}
+
+.site-menu{
+    font-family: "Questrial", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    width: 1500px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 50px;
+}
+
+li{
+    letter-spacing: 0.1rem;
+    margin: 1rem;
+}
+
+.caja-img-main{
+    width: min-content;
+    height: min-content;
+}
+
+.img-main{
+    width: 175rem;
+}
+
+
+.card{
+    box-sizing: border-box;
+    width: min-content;
+    height: min-content;
+    margin: 0.1rem;
+    
+    
+}
+
+.sec-principal{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.flechas{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    letter-spacing: 0.2rem;
+    font-family: "Questrial", sans-serif;
+    font-size: 1.1rem;
+}
+
+.flechas p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.mochilas{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.mouses{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.sillas{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.marcas{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.guitarras{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    z-index: 1;
+    
+}
+
+.card-img-top{
+    background-color: white;
+    width: 30rem;
+    height: 30rem;
+    border: solid;
+    border-width: 1px;
+    border-radius: 2rem;
+    
+}
+.card-body{
+    margin-top: 1rem;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.4rem;
+}
+
+.contenedor-zippo{
+    box-sizing: border-box;
+    width: min-content;
+    height: min-content;
+    margin-top: 10rem;
+}
+
+.img-zippo{
+    background-image: url(../img/zippo.png);
+    width: 1318%;
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-zippo{
+    width: 60%;
+    text-align: center;
+    color: black;
+}
+
+.img-zippo p{
+    font-size: 5rem;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+}
+
+button{
+    font-family: "Questrial", sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 20px 40px;
+}
+
+.contenedor-bateria{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bateria{
+    width: min-content;
+    height: min-content;
+}
+
+.img-bateria{
+    padding: 2rem;
+    border: none;
+    width: 70rem;
+    
+}
+
+.texto{
+    text-align: center;
+    margin: auto 0;
+    padding-left: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+.texto button{
+    background-color: #F2B366;
+}
+
+.marcas img{
+    width: 19rem;
+    height: 19rem;
+}
+
+.esp{
+    margin-bottom: 5rem;
+}
+
+.contenedor1{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    overflow: visible;
+}
+
+.imagenes{
+    display: flex;
+}
+
+.izquierda, .derecha{
+    max-width: 100%; 
+    width: 50%;
+    height: auto;
+    flex: 1;
+    z-index: -1;
+}
+.izquierda{
+    left: -50%;
+}
+
+.derecha{
+    right: -50%
+}
+
+.wsp{
+    width: min-content;
+    height: min-content;
+    border: none;
+    border-radius: 20px;
+    background-color: #42C552;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    z-index: 2;
+}
+
+.wsp img{
+    width: 5.5rem;
+    height: 5.5rem;
+    padding: 0.5rem;
+}
+
+.chat{
+    
+    width: 10rem;
+    height: 5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.chat p{
+    color: #FFFFFF;
+    text-align: center;
+    margin: auto 0;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+footer{
+    text-align: center;
+    font-family: "Questrial", sans-serif;
+    z-index: 1;
+    font-size: 1.5rem;
+    background-color: #FFFFFF;
+    padding-bottom: 4rem;
+
+}
+
+footer p{
+    margin: 1.3rem;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+.direccion{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    background-image: linear-gradient(to bottom, #FFE331 0%, #ffaa33 25%, #ff884d 50%, #ff6633 75%, #ff3333 100%);
+    border-radius: 40px;
+    
+    padding: 20px 40px;
+    width: 50rem;
+    height: 7rem;
+}
